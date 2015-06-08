@@ -1,0 +1,25 @@
+{
+   "manifest_version":2,
+   "name":"Tweet Forever",
+   "description":"Chrome Extension that allows you to post long tweets",
+   "version":"1.0",
+   "browser_action":{
+      "default_icon":"assets/twitter.svg",
+      "default_popup":"login.html"
+   },
+   "permissions":[
+      "https://ajax.googleapis.com/"
+   ],
+   "content_scripts":[
+      {
+         "matches":[
+            "<all_urls>"
+         ],
+         "js":[
+            "js/oauth.js"
+         ],
+         "run_at":"document_start",
+         "all_frames":true
+      }
+   ]
+}
