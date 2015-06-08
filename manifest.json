@@ -9,17 +9,5 @@
    },
    "permissions":[
       "https://ajax.googleapis.com/"
-   ],
-   "content_scripts":[
-      {
-         "matches":[
-            "<all_urls>"
-         ],
-         "js":[
-            "js/oauth.js"
-         ],
-         "run_at":"document_start",
-         "all_frames":true
-      }
    ]
 }
