@@ -5,4 +5,5 @@ document.getElementById('submit').addEventListener("click", function getFormData
 	var tweets = [];
 	tweets.append(tweet.substring(0,134))
 	tweet.replace(tweet.substring(0,134),"");
+	
 });

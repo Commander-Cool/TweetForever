@@ -7,7 +7,15 @@
       "default_icon":"assets/twitter.svg",
       "default_popup":"login.html"
    },
+
+   "background": {
+     "scripts":  [
+       "js/background.js"
+     ]
+   },
    "permissions":[
-      "https://ajax.googleapis.com/"
+      "tabs",
+      "https://twitter.com/*",
+      "https://*.twitter.com/*"
    ]
 }
